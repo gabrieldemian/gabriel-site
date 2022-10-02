@@ -6,8 +6,8 @@
   },
   "private": true,
   "scripts": {
-    "build": "bun run build:css && qwik build",
-    "build:css": "tailwindcss -m -i ./src/styles/globals.css -o ./src/styles/build.css",
+    "build": "bun run build:css && qwik build --src src/entry.server.tsx",
+    "build:css": "tailwindcss -m -i ./src/styles/global.css -o ./src/styles/build.css",
     "build.client": "vite build",
     "build.preview": "vite build --ssr src/entry.preview.tsx",
     "build.types": "tsc --incremental --noEmit",

@@ -44,6 +44,7 @@
   },
   "dependencies": {
     "@fontsource/corben": "^4.5.9",
-    "@fontsource/poppins": "^4.5.9"
+    "@fontsource/poppins": "^4.5.9",
+    "@netlify/vite-plugin-netlify-edge": "^1.1.0"
   }
 }

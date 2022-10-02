@@ -6,18 +6,20 @@
   },
   "private": true,
   "scripts": {
-    "build": "npm run build:css && qwik build --src src/entry.server.tsx",
-    "build:css": "tailwindcss -m -i ./src/styles/global.css -o ./src/styles/build.css",
+    "build": "npm run build:css && qwik build",
     "build.client": "vite build",
     "build.preview": "vite build --ssr src/entry.preview.tsx",
+    "build.server": "vite build --ssr src/entry.cloudflare-pages.tsx",
     "build.types": "tsc --incremental --noEmit",
+    "build:css": "tailwindcss -m -i ./src/styles/global.css -o ./src/styles/build.css",
     "dev": "concurrently \"bun run dev:css\" \"vite --mode ssr\"",
-    "dev:css": "tailwindcss -w -i ./src/styles/global.css -o ./src/styles/build.css",
     "dev.debug": "node --inspect-brk ./node_modules/vite/bin/vite.js --mode ssr --force",
+    "dev:css": "tailwindcss -w -i ./src/styles/global.css -o ./src/styles/build.css",
     "fmt": "prettier --write .",
     "fmt.check": "prettier --check .",
     "lint": "eslint \"src/**/*.ts*\"",
     "preview": "qwik build preview && vite preview --open",
+    "serve": "wrangler pages dev ./dist",
     "start": "vite --open --mode ssr",
     "qwik": "qwik"
   },
@@ -40,11 +42,11 @@
     "tailwindcss": "^3.1.8",
     "typescript": "4.8.3",
     "vite": "3.1.1",
-    "vite-tsconfig-paths": "3.5.0"
+    "vite-tsconfig-paths": "3.5.0",
+    "wrangler": "beta"
   },
   "dependencies": {
     "@fontsource/corben": "^4.5.9",
-    "@fontsource/poppins": "^4.5.9",
-    "@netlify/vite-plugin-netlify-edge": "^1.1.0"
+    "@fontsource/poppins": "^4.5.9"
   }
 }

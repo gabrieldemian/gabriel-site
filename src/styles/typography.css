@@ -1,0 +1,85 @@
+/* @link https://utopia.fyi/type/calculator?c=320,18,1.2,1920,22,1.333,5,2,&s=0.75|0.5|0.25,1.5|2|3|4|6,s-l */
+
+@layer base {
+  :root {
+    --step--2: clamp(0.77rem, calc(0.78rem + -0.01vw), 0.78rem);
+    --step--1: clamp(0.94rem, calc(0.92rem + 0.09vw), 1.03rem);
+    --step-0: clamp(1.13rem, calc(1.08rem + 0.25vw), 1.38rem);
+    --step-1: clamp(1.35rem, calc(1.25rem + 0.48vw), 1.83rem);
+    --step-2: clamp(1.62rem, calc(1.46rem + 0.82vw), 2.44rem);
+    --step-3: clamp(1.94rem, calc(1.68rem + 1.31vw), 3.26rem);
+    --step-4: clamp(2.33rem, calc(1.93rem + 2.01vw), 4.34rem);
+    --step-5: clamp(2.80rem, calc(2.20rem + 2.99vw), 5.79rem);
+  }
+
+  p {
+    font-size: var(--step-0);
+    line-height: 1.5em;
+    @apply text-text font-poppins;
+  }
+
+  h1, h2, h3, h4, h5, h6, label {
+    @apply text-subtext1;
+    line-height: 1em;
+  }
+
+  h1, h2, h3, h4, h5, h6 {
+    @apply font-corben;
+  }
+
+  h1 {
+    font-size: var(--step-5);
+  }
+
+  h2 {
+    font-size: var(--step-4);
+  }
+
+  h3 {
+    font-size: var(--step-3);
+  }
+
+  h4 {
+    font-size: var(--step-2);
+  }
+
+  h5 {
+    font-size: var(--step-1);
+  }
+
+  a {
+    font-family: var(--step-0);
+    @apply text-rosewater relative;
+  }
+
+  a:after {
+    content: "";
+    @apply duration-300 bottom-0 left-0 w-0 h-0.5 absolute bg-gradient-to-r from-rosewater to-peach;
+  }
+
+  a:hover:after {
+    @apply w-full;
+  }
+
+  article.container {
+    @apply mx-auto max-w-[60ch] p-2 md:p-0;
+  }
+
+  article > h1, h2, h3, h4, h5, h6 {
+    @apply mb-5;
+  }
+
+  article p {
+    @apply mb-5;
+  }
+
+  small, .small {
+    line-height: 1.5em;
+    @apply text-text font-poppins;
+    font-size: var(--step--1);
+  }
+
+  *::selection {
+    @apply bg-surface2;
+  }
+}

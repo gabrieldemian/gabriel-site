@@ -1,5 +1,5 @@
 import { component$ } from '@builder.io/qwik'
-import type { DocumentHead } from '@builder.io/qwik-city'
+import { DocumentHead } from '@builder.io/qwik-city'
 import { Button } from '~/components/ui'
 
 export default component$(() => {
@@ -18,7 +18,9 @@ export default component$(() => {
         I have more than 6 years of professional experience. I had worked for
         companies and projects from all over the world.
       </p>
-      <Button>My Portfolio</Button>
+      <a href="/portfolio">
+        <Button>My Portfolio</Button>
+      </a>
       <h5 className="mt-10">Follow me</h5>
       <p className="mb-1">
         Github: <small>gabrieldemian</small>

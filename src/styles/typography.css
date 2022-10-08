@@ -2,14 +2,14 @@
 
 @layer base {
   :root {
-    --step--2: clamp(0.77rem, calc(0.78rem + -0.01vw), 0.78rem);
-    --step--1: clamp(0.94rem, calc(0.92rem + 0.09vw), 1.03rem);
-    --step-0: clamp(1.13rem, calc(1.08rem + 0.25vw), 1.38rem);
-    --step-1: clamp(1.35rem, calc(1.25rem + 0.48vw), 1.83rem);
-    --step-2: clamp(1.62rem, calc(1.46rem + 0.82vw), 2.44rem);
-    --step-3: clamp(1.94rem, calc(1.68rem + 1.31vw), 3.26rem);
-    --step-4: clamp(2.33rem, calc(1.93rem + 2.01vw), 4.34rem);
-    --step-5: clamp(2.80rem, calc(2.20rem + 2.99vw), 5.79rem);
+    --step--2: clamp(0.70rem, calc(0.80rem + -0.08vw), 0.78rem);
+    --step--1: clamp(0.94rem, calc(0.94rem + 0.00vw), 0.94rem);
+    --step-0: clamp(1.13rem, calc(1.10rem + 0.13vw), 1.25rem);
+    --step-1: clamp(1.35rem, calc(1.29rem + 0.32vw), 1.67rem);
+    --step-2: clamp(1.62rem, calc(1.50rem + 0.60vw), 2.22rem);
+    --step-3: clamp(1.94rem, calc(1.74rem + 1.02vw), 2.96rem);
+    --step-4: clamp(2.33rem, calc(2.01rem + 1.61vw), 3.95rem);
+    --step-5: clamp(2.80rem, calc(2.31rem + 2.46vw), 5.26rem);
   }
 
   p {
@@ -49,15 +49,15 @@
 
   a {
     font-family: var(--step-0);
-    @apply text-rosewater relative;
+    @apply text-flamingo relative;
   }
 
-  a:after {
+  a.link-hover:after {
     content: "";
-    @apply duration-300 bottom-0 left-0 w-0 h-0.5 absolute bg-gradient-to-r from-rosewater to-peach;
+    @apply duration-300 bottom-0 left-0 w-0 h-[1px] absolute bg-gradient-to-r from-rosewater to-peach;
   }
 
-  a:hover:after {
+  a.link-hover:hover:after {
     @apply w-full;
   }
 

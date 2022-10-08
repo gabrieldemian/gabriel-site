@@ -5,8 +5,10 @@ export default component$(() => {
   return (
     <main>
       <section>
-        <Nav />
-        <Slot />
+        <Nav className="max-w-[80ch]" />
+        <div class="min-h-screen">
+          <Slot />
+        </div>
         <footer className="py-5 text-center">
           <small className="text-surface2">
             © 2022 Gabriel Ribeiro. All Rights Reserved.

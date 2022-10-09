@@ -1,34 +1,34 @@
 import { component$ } from '@builder.io/qwik'
-import { useLocation } from '@builder.io/qwik-city'
-
-interface LinkProps {
-  name: string
-  href: string
-}
+import { useLocation, Link } from '@builder.io/qwik-city'
 
 interface Props {
   className?: string
 }
 
+export const items = [
+  { name: 'Heim', href: '/' },
+  { name: 'Portfolio', href: '/portfolio' }
+]
+
 const Nav = component$(({ className }: Props) => {
   const { pathname } = useLocation()
-
-  const Link = component$(({ href, name }: LinkProps) => (
-    <a
-      class={`font-bold ${pathname === href && 'text-maroon'} link-hover`}
-      href={href}
-    >
-      {name}
-    </a>
-  ))
 
   return (
     <nav
       class={`w-full bg-crust mb-10 shadow-xl mx-auto rounded-sm ${className}`}
     >
       <div class="container gap-7 justify-center p-2 md:p-0 flex items-center h-[66px]">
-        <Link name="Heim" href="/" />
-        <Link name="Portfolio" href="/portfolio" />
+        {items.map(({ name, href }) => (
+          <Link
+            class={{
+              'font-bold link-hover': true,
+              'text-maroon': pathname === href
+            }}
+            href={href}
+          >
+            {name}
+          </Link>
+        ))}
       </div>
     </nav>
   )

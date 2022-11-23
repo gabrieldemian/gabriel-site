@@ -1,36 +1,54 @@
 import { component$ } from '@builder.io/qwik'
-import { DocumentHead } from '@builder.io/qwik-city'
+import { DocumentHead, Link } from '@builder.io/qwik-city'
 import { Button } from '~/components/ui'
+
+export const socials = [
+  { name: 'Github', href: 'github.com/gabrieldemian' },
+  { name: 'Linkedin', href: 'github.com/gabrieldemian' },
+  { name: 'Twitter', href: 'github.com/gabrieldemian' }
+]
 
 export default component$(() => {
   return (
     <article class="container">
-      <div class="h-80 bg-flamingo mb-5 w-full" />
-      <h4 class="font-bold mb-0">Gabriel Ribeiro</h4>
-      <p>Frontend engineer/developer</p>
-      <h5>Work</h5>
+      <div class="mb-5 w-full block">
+        <pre>
+            {`
+   _______________________________________
+  / Welcome! Check my portfolio to see my \\
+  \\ bestest work                          /
+   ---------------------------------------
+                      \\   ^__^
+                       \\  (oo)\\_______
+                          (__)\\       )\\/\\
+                              ||----w |
+                              ||     ||
+            `}
+        </pre>
+      </div>
+      <h3 class="font-bold mb-0">Gabriel Ribeiro</h3>
+      <p className="text-flamingo">Frontend engineer/developer</p>
       <p>
-        I'm mostly a frontend specialist, but I also have experience in backend,
-        smart contracts, and Rust. You could say my skills diagram is "F
+        I'm a frontend specialist, but I also have experience in backend,
+        and Rust. You could say my skills diagram is "F
         shaped".
       </p>
       <p>
         I have more than 6 years of professional experience. I had worked for
         companies and projects from all over the world.
       </p>
-      <a href="/portfolio">
-        <Button>My Portfolio</Button>
-      </a>
-      <h5 className="mt-10">Follow me</h5>
-      <p className="mb-1">
-        Github: <small>gabrieldemian</small>
-      </p>
-      <p className="mb-1">
-        Linkedin: <small>gabrieldemian</small>
-      </p>
-      <p className="mb-1">
-        Twitter: <small>gabrieldemian</small>
-      </p>
+      <p>My native language is Portuguese, I'm fluent in English, and I have basic understanding of German.</p>
+      <Link href="/portfolio">
+        <Button className="w-full md:w-[auto]">My Portfolio</Button>
+      </Link>
+      <h4 className="mt-10">Follow me</h4>
+      {socials.map(({ name, href }) => (
+        <p className="mb-1">
+          <a href={`https://${href}`} class="link-hover" target="_blank">
+            {name}
+          </a>
+        </p>
+      ))}
     </article>
   )
 })

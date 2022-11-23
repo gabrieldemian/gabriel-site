@@ -19,7 +19,7 @@
   }
 
   h1, h2, h3, h4, h5, h6, label {
-    @apply text-subtext1;
+    @apply text-subtext1 font-bold;
     line-height: 1em;
   }
 
@@ -45,6 +45,10 @@
 
   h5 {
     font-size: var(--step-1);
+  }
+
+  h6 {
+    font-size: var(--step-0);
   }
 
   a {

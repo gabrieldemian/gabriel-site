@@ -5,7 +5,6 @@ import {
   ServiceWorkerRegister
 } from '@builder.io/qwik-city'
 import { RouterHead } from './components/router-head/router-head'
-import '@fontsource/corben/700.css'
 import '@fontsource/corben' // weight 500 by default
 import '@fontsource/poppins'
 

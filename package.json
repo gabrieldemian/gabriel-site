@@ -9,7 +9,7 @@
     "build": "npm run build:css && qwik build",
     "build.client": "vite build",
     "build.preview": "vite build --ssr src/entry.preview.tsx",
-    "build.server": "vite build --ssr src/entry.cloudflare-pages.tsx",
+    "build.server": "vite build -c adaptors/cloudflare-pages/vite.config.ts",
     "build.types": "tsc --incremental --noEmit",
     "build:css": "tailwindcss -m -i ./src/styles/global.css -o ./src/styles/build.css",
     "dev": "concurrently \"bun run dev:css\" \"vite --mode ssr\"",

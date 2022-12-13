@@ -31,19 +31,24 @@ export default component$(() => {
 
       <div class="grid md:grid-cols-2 gap-5 my-10">
         <Card
+          href="/portfolio/vault"
+          title="The Vault"
+          img="/vault.png"
+          description="Highly interactive hub. Games, user profile, animations, NFT drops, and more."
+        />
+        <Card
+          href="/portfolio/dot"
+          title="DOTs INFT"
+          img="/dot.jpg"
+          description="Interactive NFT for the DOTs collection on Ethereum."
+        />
+        <Card
           href="/portfolio/powerup-summer"
           title="POWer up summer"
           img="/powerup-summer.webp"
           description="NFT drop of Gearpods, from the MetaHero Universe."
         />
-        <Card
-          href="/portfolio/powerup-summer"
-          title="Inhabitants"
-          img="/powerup-summer.webp"
-          description="Highly interactive hub. Games, user profile, animations, NFT drops, and more."
-        />
       </div>
-
       <h5>Personal</h5>
       <p>
         Personal projects that I did for fun, for studying, or any other reason.

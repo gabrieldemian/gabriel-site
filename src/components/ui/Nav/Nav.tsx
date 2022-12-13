@@ -6,7 +6,7 @@ interface Props {
 }
 
 export const items = [
-  { name: 'Heim', href: '/' },
+  { name: 'About', href: '/' },
   { name: 'Portfolio', href: '/portfolio' }
 ]
 

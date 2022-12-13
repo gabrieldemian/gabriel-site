@@ -759,8 +759,20 @@ body {
   display: grid;
 }
 
+.aspect-video {
+  aspect-ratio: 16 / 9;
+}
+
 .h-\[66px\] {
   height: 66px;
+}
+
+.h-\[150px\] {
+  height: 150px;
+}
+
+.h-\[170px\] {
+  height: 170px;
 }
 
 .min-h-screen {
@@ -820,6 +832,11 @@ body {
 .object-contain {
   -o-object-fit: contain;
      object-fit: contain;
+}
+
+.object-cover {
+  -o-object-fit: cover;
+     object-fit: cover;
 }
 
 .p-2 {

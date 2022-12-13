@@ -20,7 +20,7 @@ const Card = component$(
       >
         <Link href={href}>
           <img
-            class="mb-2 w-full rounded-lg object-contain duration-300 overflow-hidden hover:scale-[102%]"
+            class="mb-2 w-full h-[170px] rounded-lg object-cover duration-300 overflow-hidden hover:scale-[102%]"
             width="100%"
             height="auto"
             src={img}

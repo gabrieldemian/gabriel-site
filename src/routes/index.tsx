@@ -22,10 +22,10 @@ export default component$(() => {
       <div class="mb-5 w-full block">
         <pre onClick$={() => a.a+= 1}>
             {`
-   _______________________________________
-  / Welcome! Check my portfolio to see my \\
-  \\ bestest work                          /
-   ---------------------------------------
+ _____________________________________
+/ Welcome, stranger. I will guide you \\
+\\ through this website.               /
+ -------------------------------------
                       \\   ^__^
                        \\  (oo)\\_______
                           (__)\\       )\\/\\
@@ -37,13 +37,12 @@ export default component$(() => {
       <h3 class="font-bold mb-0">Gabriel Ribeiro</h3>
       <p class="text-flamingo">Frontend engineer/developer</p>
       <p>
-        I'm a frontend specialist, but I also have experience in backend, Rust, and blockchains smart-contracts.
+        I am a frontend specialist, but I also have experience in backend, Rust, and blockchain smart contracts.
       </p>
       <p>
-        I have more than 6 years of professional experience. I had worked for
-        companies and projects from all over the world.
+        I have over 6 years of professional experience, having worked for companies and projects from around the globe.
       </p>
-      <p>My mother language is Portuguese, I'm C1 in English, and A1 in German.</p>
+      <p>My native language is Portuguese, and I am proficient in English (C1 level) and have a basic knowledge of German (A1 level).</p>
       <Link href="/portfolio">
         <Button className="w-full md:w-[auto]">My Portfolio</Button>
       </Link>

@@ -9,12 +9,13 @@ export default component$(() => {
         <pre>
           <code>
             {`
-   _______________________________________
-  / Here you will see live examples of my \\
-  | best work. Click on an image to be    |
-  | redirected to it's corresponding      |
-  \\ project.                              /
-   ---------------------------------------
+ _______________________________________
+/ Please find below a selection of my   \\
+| best work, accompanied by live        |
+| examples. To access the corresponding |
+| project, simply click on the relevant |
+\\ image.                                /
+ ---------------------------------------
                       \\   ^__^
                        \\  (oo)\\_______
                           (__)\\       )\\/\\
@@ -34,19 +35,19 @@ export default component$(() => {
           href="https://enterthevault.app"
           title="The Vault"
           img="/vault.png"
-          description="Highly interactive hub. Games, user profile, animations, NFT drops, and more."
+          description="Highly interactive hub. Games, user profile, NFT mints, and more. Built in Nextjs."
         />
         <Card
           href="https://opensea.io/collection/inhabitants-dots"
           title="DOTs INFT"
           img="/dot.jpg"
-          description="Interactive NFT for the DOTs collection on Ethereum."
+          description="Interactive NFT for the DOTs collection on the Ethereum Blockchain. Built in Solidjs."
         />
         <Card
           href="/portfolio/powerup-summer"
           title="POWer up summer"
           img="/powerup-summer.webp"
-          description="NFT drop of Gearpods, from the MetaHero Universe."
+          description="Website of the POWer up Summer NFT drop. in Vanilla JS."
         />
       </div>
       <h5>Personal</h5>
@@ -58,19 +59,19 @@ export default component$(() => {
           href="/portfolio/powerup-summer"
           title="Ecommerce"
           img="/ecommerce.webp"
-          description="Complete ecommerce with cart, search, filter, and more."
+          description="Complete ecommerce with cart, search, filter, checkout, and more. Built in Nextjs."
         />
         <Card
           href="/portfolio/powerup-summer"
           title="Dashboard"
           img="/dashboard.webp"
-          description="Data-driven dashboard, with tables and graphs."
+          description="Data-driven dashboard, with tables and graphs and animations. Built in Nextjs."
         />
         <Card
           href="/portfolio/powerup-summer"
           title="P2P Chat"
           img="/p2p.png"
-          description="Peer-to-peer chat over a descentralized network, built in Rust."
+          description="Peer-to-peer chat over a descentralized network, it also support sending files between peers. Built in rust."
         />
       </div>
     </article>

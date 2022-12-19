@@ -4,8 +4,8 @@ import { Button } from '~/components/ui'
 
 export const socials = [
   { name: 'Github', href: 'github.com/gabrieldemian' },
-  { name: 'Linkedin', href: 'github.com/gabrieldemian' },
-  { name: 'Twitter', href: 'github.com/gabrieldemian' }
+  { name: 'Linkedin', href: 'linkedin.com/in/xgcr13/' },
+  { name: 'Twitter', href: 'twitter.com/gabdem13' }
 ]
 
 export default component$(() => {

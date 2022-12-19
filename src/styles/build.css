@@ -759,20 +759,12 @@ body {
   display: grid;
 }
 
-.aspect-video {
-  aspect-ratio: 16 / 9;
+.h-\[170px\] {
+  height: 170px;
 }
 
 .h-\[66px\] {
   height: 66px;
-}
-
-.h-\[150px\] {
-  height: 150px;
-}
-
-.h-\[170px\] {
-  height: 170px;
 }
 
 .min-h-screen {
@@ -827,11 +819,6 @@ body {
 .bg-crust {
   --tw-bg-opacity: 1;
   background-color: rgba(var(--ctp-crust), var(--tw-bg-opacity));
-}
-
-.object-contain {
-  -o-object-fit: contain;
-     object-fit: contain;
 }
 
 .object-cover {

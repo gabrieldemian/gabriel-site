@@ -20,6 +20,7 @@ const Nav = component$(({ className }: Props) => {
       <div class="container gap-7 justify-center p-2 md:p-0 flex items-center h-[66px]">
         {items.map(({ name, href }) => (
           <Link
+            key={name}
             class={{
               'font-bold link-hover': true,
               'text-maroon': pathname === href

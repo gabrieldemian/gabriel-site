@@ -31,13 +31,13 @@ export default component$(() => {
 
       <div class="grid md:grid-cols-2 gap-5 my-10">
         <Card
-          href="/portfolio/vault"
+          href="https://enterthevault.app"
           title="The Vault"
           img="/vault.png"
           description="Highly interactive hub. Games, user profile, animations, NFT drops, and more."
         />
         <Card
-          href="/portfolio/dot"
+          href="https://opensea.io/collection/inhabitants-dots"
           title="DOTs INFT"
           img="/dot.jpg"
           description="Interactive NFT for the DOTs collection on Ethereum."
@@ -69,8 +69,8 @@ export default component$(() => {
         <Card
           href="/portfolio/powerup-summer"
           title="P2P Chat"
-          img="/dashboard.webp"
-          description="Peer-to-peer encrypted network chat implemented using Rust lang."
+          img="/p2p.png"
+          description="Peer-to-peer chat over a descentralized network, built in Rust."
         />
       </div>
     </article>

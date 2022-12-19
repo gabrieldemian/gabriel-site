@@ -18,7 +18,7 @@ const Card = component$(
           [className]: !!className
         }}
       >
-        <Link href={href}>
+        <Link href={href} target="_blank">
           <img
             class="mb-2 w-full h-[170px] rounded-lg object-cover duration-300 overflow-hidden hover:scale-[102%]"
             width="100%"
@@ -26,9 +26,7 @@ const Card = component$(
             src={img}
           />
         </Link>
-        <Link href={href}>
-          <p class="font-bold text-white mb-2">{title}</p>
-        </Link>
+        <p class="font-bold text-white mb-2">{title}</p>
         <p class="small">{description}</p>
       </div>
     )

@@ -5,12 +5,17 @@ module.exports = {
     es2021: true,
     node: true
   },
+  parser: '@typescript-eslint/parser',
+  plugins: ['@typescript-eslint', 'import'],
   extends: [
+    'plugin:qwik/recommended',
     'eslint:recommended',
     'plugin:@typescript-eslint/recommended',
-    'plugin:qwik/recommended'
+    'plugin:import/recommended',
+    'plugin:import/typescript',
+    'plugin:prettier/recommended',
+    'prettier'
   ],
-  parser: '@typescript-eslint/parser',
   parserOptions: {
     tsconfigRootDir: __dirname,
     project: ['./tsconfig.json'],
@@ -20,21 +25,50 @@ module.exports = {
       jsx: true
     }
   },
-  plugins: ['@typescript-eslint'],
+  ignorePatterns: ['CHANGELOG.md', 'build', 'dist', 'node_modules'],
   rules: {
-    '@typescript-eslint/no-explicit-any': 'off',
+    'prettier/prettier': [
+      'error',
+      {
+        singleQuote: true,
+        endOfLine: 'auto',
+        trailingComma: 'all',
+        tabWidth: 2,
+        bracketSpacing: true,
+        semi: false,
+      },
+    ],
     '@typescript-eslint/explicit-module-boundary-types': 'off',
-    '@typescript-eslint/no-inferrable-types': 'off',
+    '@typescript-eslint/no-explicit-any': 'off',
     '@typescript-eslint/no-non-null-assertion': 'off',
-    '@typescript-eslint/no-empty-interface': 'off',
-    '@typescript-eslint/no-namespace': 'off',
-    '@typescript-eslint/no-empty-function': 'off',
-    '@typescript-eslint/no-this-alias': 'off',
-    '@typescript-eslint/ban-types': 'off',
-    '@typescript-eslint/ban-ts-comment': 'off',
-    'prefer-spread': 'off',
-    'no-case-declarations': 'off',
-    'no-console': 'off',
-    '@typescript-eslint/no-unused-vars': ['error']
+    '@typescript-eslint/no-unused-vars': [
+      2,
+      {
+        argsIgnorePattern: '^_',
+        caughtErrorsIgnorePattern: '^_',
+        destructuredArrayIgnorePattern: '^_',
+        ignoreRestSiblings: true,
+      },
+    ],
+    '@typescript-eslint/no-var-requires': 'off',
+    'import/no-unresolved': 'off',
+    'import/order': [
+      'error',
+      {
+        groups: ['external', 'internal'],
+        'newlines-between': 'always-and-inside-groups',
+        alphabetize: {
+          order: 'asc',
+        },
+      },
+    ],
+    'sort-imports': [
+      'warn',
+      {
+        ignoreCase: false,
+        ignoreDeclarationSort: true,
+        ignoreMemberSort: false,
+      },
+    ],
   }
 }

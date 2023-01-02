@@ -7,7 +7,7 @@ interface Props {
 
 export const items = [
   { name: 'About', href: '/' },
-  { name: 'Portfolio', href: '/portfolio' }
+  { name: 'Portfolio', href: '/portfolio/' }
 ]
 
 const Nav = component$(({ className }: Props) => {

@@ -1,27 +1,26 @@
-import { component$, useTask$, useStore } from '@builder.io/qwik'
+import { component$, useTask$ } from '@builder.io/qwik'
 import { DocumentHead, Link } from '@builder.io/qwik-city'
+
 import { Button } from '~/components/ui'
 
 export const socials = [
   { name: 'Github', href: 'github.com/gabrieldemian' },
   { name: 'Linkedin', href: 'linkedin.com/in/xgcr13/' },
-  { name: 'Twitter', href: 'twitter.com/gabdem13' }
+  { name: 'Twitter', href: 'twitter.com/gabdem13' },
 ]
 
 export default component$(() => {
-  const a = useStore({a: 0})
   console.log('being re-renderd')
 
   useTask$(({ track }) => {
-    track(() => a.a)
     console.log('component mounted')
   })
 
   return (
     <article class="container">
       <div class="mb-5 w-full block">
-        <pre onClick$={() => a.a+= 1}>
-            {`
+        <pre>
+          {`
  _____________________________________
 / Welcome, stranger. I will guide you \\
 \\ through this website.               /
@@ -37,12 +36,17 @@ export default component$(() => {
       <h3 class="font-bold mb-0">Gabriel Ribeiro</h3>
       <p class="text-flamingo">Frontend engineer/developer</p>
       <p>
-        I am a frontend specialist, but I also have experience in backend, Rust, and blockchain smart contracts.
+        I am a frontend specialist, but I also have experience in backend, Rust,
+        and blockchain smart contracts.
       </p>
       <p>
-        I have over 6 years of professional experience, having worked for companies and projects from around the globe.
+        I have over 6 years of professional experience, having worked for
+        companies and projects from around the globe.
       </p>
-      <p>My native language is Portuguese, and I am proficient in English (C1 level) and have a basic knowledge of German (A1 level).</p>
+      <p>
+        My native language is Portuguese, and I am proficient in English (C1
+        level) and have a basic knowledge of German (A1 level).
+      </p>
       <Link href="/portfolio">
         <Button className="w-full md:w-[auto]">My Portfolio</Button>
       </Link>
@@ -59,5 +63,5 @@ export default component$(() => {
 })
 
 export const head: DocumentHead = {
-  title: 'Gabriel Ribeiro'
+  title: 'Gabriel Ribeiro',
 }

@@ -40,7 +40,7 @@ export default component$(() => {
         and blockchain smart contracts.
       </p>
       <p>
-        I have over 6 years of professional experience, having worked for
+        I have over 5 years of professional experience, having worked for
         companies and projects from around the globe.
       </p>
       <p>

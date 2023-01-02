@@ -29,7 +29,7 @@ export default component$(() => {
       <h5>Professional</h5>
       <p>
         Projects that I developed professionally while working for companies or
-        paid projects.
+        paid projects. (Not all are listed here).
       </p>
 
       <div class="grid md:grid-cols-2 gap-5 my-10">
@@ -45,12 +45,6 @@ export default component$(() => {
           img="/dot.jpg"
           description="Interactive NFT for the DOTs collection on the Ethereum Blockchain. Built in Solidjs."
         />
-        <Card
-          href="/portfolio/powerup-summer"
-          title="POWer up summer"
-          img="/powerup-summer.webp"
-          description="Website of the POWer up Summer NFT drop. in Vanilla JS."
-        />
       </div>
       <h5>Personal</h5>
       <p>
@@ -58,19 +52,19 @@ export default component$(() => {
       </p>
       <div class="grid md:grid-cols-2 gap-5 my-10">
         <Card
-          href="/portfolio/powerup-summer"
+          href="https://github.com/gabrieldemian/nextjs-ecommerce"
           title="Ecommerce"
           img="/ecommerce.webp"
           description="Complete ecommerce with cart, search, filter, checkout, and more. Built in Nextjs."
         />
         <Card
-          href="/portfolio/powerup-summer"
+          href="https://github.com/gabrieldemian/black-dashboard"
           title="Dashboard"
           img="/dashboard.webp"
           description="Data-driven dashboard, with tables and graphs and animations. Built in Nextjs."
         />
         <Card
-          href="/portfolio/powerup-summer"
+          href="https://github.com/gabrieldemian/p2p-chat"
           title="P2P Chat"
           img="/p2p.png"
           description="Peer-to-peer chat over a descentralized network, it also support sending files between peers. Built in rust."

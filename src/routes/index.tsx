@@ -12,7 +12,7 @@ export const socials = [
 export default component$(() => {
   console.log('being re-renderd')
 
-  useTask$(({ track }) => {
+  useTask$(() => {
     console.log('component mounted')
   })
 

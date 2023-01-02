@@ -9,6 +9,7 @@
     "pre-commit": "npm run lint:fix"
   },
   "scripts": {
+    "prepare": "npx simple-git-hooks",
     "build": "npm run build:css && qwik build",
     "build.client": "vite build",
     "build.preview": "vite build --ssr src/entry.preview.tsx",

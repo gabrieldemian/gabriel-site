@@ -28,10 +28,7 @@
     }
   },
   "include": [
-    "src"
-  ],
-  "exclude": [
-    "functions",
-    "adaptors"
+    "src",
+    "functions"
   ]
 }

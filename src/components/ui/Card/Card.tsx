@@ -15,7 +15,7 @@ const Card = component$(
       <div
         class={{
           'w-full': true,
-          [className]: !!className
+          [className]: !!className,
         }}
       >
         <Link href={href} target="_blank">
@@ -30,7 +30,7 @@ const Card = component$(
         <p class="small">{description}</p>
       </div>
     )
-  }
+  },
 )
 
 export default Card

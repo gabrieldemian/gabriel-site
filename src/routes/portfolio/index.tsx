@@ -1,5 +1,6 @@
 import { component$ } from '@builder.io/qwik'
 import { DocumentHead } from '@builder.io/qwik-city'
+
 import { Card } from '~/components/ui'
 
 export default component$(() => {
@@ -27,7 +28,8 @@ export default component$(() => {
       </div>
       <h5>Professional</h5>
       <p>
-        Projects that I developed professionally while working for companies or paid projects.
+        Projects that I developed professionally while working for companies or
+        paid projects.
       </p>
 
       <div class="grid md:grid-cols-2 gap-5 my-10">
@@ -79,5 +81,5 @@ export default component$(() => {
 })
 
 export const head: DocumentHead = {
-  title: 'Gabriel Ribeiro - Portfolio'
+  title: 'Gabriel Ribeiro - Portfolio',
 }

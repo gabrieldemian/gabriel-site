@@ -27,6 +27,7 @@ module.exports = {
   },
   ignorePatterns: ['CHANGELOG.md', 'build', 'dist', 'node_modules'],
   rules: {
+    '@typescript-eslint/ban-ts-comment': 'off',
     'prettier/prettier': [
       'error',
       {

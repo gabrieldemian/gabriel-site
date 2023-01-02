@@ -1,4 +1,5 @@
-import { component$, Slot } from '@builder.io/qwik'
+import { Slot, component$ } from '@builder.io/qwik'
+
 import { Nav } from '~/components/ui'
 
 export default component$(() => {
